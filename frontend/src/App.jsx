@@ -9,6 +9,7 @@ import CheckoutPage from "./pages/CheckoutPage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import OrdersPage from "./pages/OrdersPage.jsx";
+import AIStylist from "./pages/AIStylist.jsx";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/orders" element={<OrdersPage />} />
+            <Route path="/ai" element={<AIStylist />} />
           </Routes>
         </div>
       </CartProvider>

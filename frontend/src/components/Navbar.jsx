@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
-import { useCart } from "../context/CartContext.jsx"; 
+import { useCart } from "../context/CartContext.jsx";
 
 export default function Navbar() {
   const { user, logout } = useAuth();
@@ -29,6 +29,10 @@ export default function Navbar() {
       <div className="navbar-right">
         <Link to="/" className="nav-link">
           Home
+        </Link>
+
+        <Link to="/ai" className="ask-ora-btn">
+          Ask ORA
         </Link>
 
         <Link to="/orders" className="nav-link">
