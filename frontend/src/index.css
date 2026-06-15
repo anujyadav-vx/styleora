@@ -646,3 +646,330 @@ textarea {
 .ora-input-section button:hover {
   opacity: 0.95;
 }
+
+.ora-btn {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+}
+
+.ora-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(196, 154, 59, 0.35);
+}
+
+.ora-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  min-height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+}
+
+.ora-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ora-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.ora-header p {
+  color: var(--text-muted);
+}
+
+.ora-chat {
+  flex: 1;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 25px;
+  overflow-y: auto;
+  box-shadow: var(--shadow-soft);
+}
+
+.ora-empty {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.ora-empty h2 {
+  margin-bottom: 12px;
+}
+
+.ora-empty p {
+  color: var(--text-muted);
+}
+
+.message {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.message.assistant {
+  justify-content: flex-start;
+}
+
+.message-content {
+  max-width: 75%;
+  padding: 16px;
+  border-radius: 18px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.message.user .message-content {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: white;
+}
+
+.message.assistant .message-content {
+  background: #f8f8f8;
+  border: 1px solid var(--border-subtle);
+}
+
+.ora-input-area {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-shrink: 0;
+}
+
+.ora-input-area input {
+  flex: 1;
+  padding: 18px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid var(--border-subtle);
+  font-size: 1rem;
+}
+
+.ora-input-area input:focus {
+  border-color: var(--accent);
+}
+
+.ora-input-area button {
+  padding: 0 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: white;
+  font-weight: 600;
+}
+
+.ora-input-area button:hover {
+  transform: translateY(-2px);
+}
+
+.ora-page {
+  max-width: 1000px;
+  margin: auto;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+}
+
+.ora-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.ora-header h1 {
+  font-size: 2.4rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.ora-header p {
+  color: var(--text-muted);
+}
+
+.ora-chat {
+  flex: 1;
+  overflow-y: auto;
+
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+
+  padding: 30px;
+  box-shadow: var(--shadow-soft);
+
+  min-height: 0;
+}
+
+.ora-empty {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.ora-empty h2 {
+  margin-bottom: 12px;
+}
+
+.ora-empty p {
+  color: var(--text-muted);
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.suggestion-card {
+  padding: 18px;
+  background: white;
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  text-align: left;
+  transition: all 0.25s ease;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-soft);
+}
+
+.message {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.message-content {
+  background: white;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid var(--border-subtle);
+  line-height: 1.8;
+  width: fit-content;
+  max-width: 80%;
+}
+
+.message.user {
+  flex-direction: row-reverse;
+}
+
+.message.user .message-content {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: white;
+}
+
+.message-content ul {
+  padding-left: 20px;
+}
+
+.message-content p {
+  margin-bottom: 10px;
+}
+
+.ora-input-area {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.ora-input-area input {
+  flex: 1;
+  padding: 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background: white;
+}
+
+.ora-input-area button {
+  padding: 0 30px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: white;
+  font-weight: 600;
+}
+
+.ora-input-area button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.typing {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.typing span {
+  width: 10px;
+  height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: typing 1.3s infinite;
+}
+
+.typing span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-6px);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+}
+
+.ora-chat::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ora-chat::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ora-chat::-webkit-scrollbar-thumb {
+  background: rgba(196, 154, 59, 0.4);
+  border-radius: 999px;
+}
+
+.ora-chat::-webkit-scrollbar-thumb:hover {
+  background: rgba(196, 154, 59, 0.7);
+}

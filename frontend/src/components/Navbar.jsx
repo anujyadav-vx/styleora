@@ -31,12 +31,12 @@ export default function Navbar() {
           Home
         </Link>
 
-        <Link to="/ai" className="ask-ora-btn">
-          Ask ORA
-        </Link>
-
         <Link to="/orders" className="nav-link">
           Orders
+        </Link>
+
+        <Link to="/ai" className="ask-ora-btn">
+          Ask ORA
         </Link>
 
         <Link to="/cart" className="nav-link">
